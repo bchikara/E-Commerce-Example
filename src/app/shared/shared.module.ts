@@ -5,7 +5,7 @@ import { DataTableModule } from 'angular-4-data-table/dist';
 import { CustomFormsModule } from 'ng2-validation';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
-import { NgModule } from '@angular/core';
+import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 
 import { ProductCardComponent } from './components/product-card/product-card.component';
 import { ProductQuantityComponent } from './components/product-quantity/product-quantity.component';
@@ -50,6 +50,6 @@ import { UserService } from './services/user.service';
     ProductService,
     ShoppingCartService,
     OrderService
-  ]
+  ],schemas:[NO_ERRORS_SCHEMA],
 })
 export class SharedModule { }

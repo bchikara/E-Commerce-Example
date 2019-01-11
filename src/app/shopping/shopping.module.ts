@@ -3,7 +3,7 @@ import { AuthGuard } from 'shared/services/auth-guard.service';
 import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
-import { NgModule } from '@angular/core';
+import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 
 import { CheckOutComponent } from './components/check-out/check-out.component';
 import { MyOrdersComponent } from './components/my-orders/my-orders.component';
@@ -34,6 +34,6 @@ import { ShoppingCartComponent } from './components/shopping-cart/shopping-cart.
     ProductFilterComponent,
     ShoppingCartSummaryComponent,
     ShippingFormComponent
-  ]
+  ],schemas:[NO_ERRORS_SCHEMA],
 })
 export class ShoppingModule { }

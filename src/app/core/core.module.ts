@@ -3,7 +3,7 @@ import { RouterModule } from '@angular/router';
 import { LoginComponent } from './components/login/login.component';
 import { HomeComponent } from './components/home/home.component';
 import { BsNavbarComponent } from './components/bs-navbar/bs-navbar.component';
-import { NgModule } from '@angular/core';
+import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @NgModule({
@@ -15,7 +15,7 @@ import { CommonModule } from '@angular/common';
     BsNavbarComponent,
     HomeComponent,
     LoginComponent,        
-  ],
+  ],schemas:[NO_ERRORS_SCHEMA],
   exports: [
     BsNavbarComponent
   ]

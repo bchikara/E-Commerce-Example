@@ -1,8 +1,7 @@
-import { NgModule } from '@angular/core';
+import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { AngularFireModule } from 'angularfire2';
-
 import { environment } from './../environments/environment';
 import { AdminModule } from './admin/admin.module';
 import { AdminAuthGuard } from './admin/services/admin-auth-guard.service';
@@ -32,6 +31,7 @@ import { ShoppingModule } from './shopping/shopping.module';
   providers: [
     AdminAuthGuard,
   ],
+  schemas:[NO_ERRORS_SCHEMA],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
